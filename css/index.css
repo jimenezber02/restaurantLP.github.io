@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.margen-interno{
+    padding:  50px 150px;
+    margin-top: 0px;
+}
+
+#main{
+    width: 100%;
+}
+header{
+    width: 100%;
+    height: 500px;
+    background-image: url('../img/vinos-banner.png');
+    background-size: cover;
+    background-position: center;
+}
+header #content{
+    background: rgb(0,0,0,.6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 150px;
+}
+nav{
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-bottom: 0.1px solid #ffffff59;
+}
+nav #logo{
+    flex: 1 1 10%;
+    display: flex;
+    background: red;
+    justify-content: center;
+    align-items: center;
+}
+nav ul{
+    flex: 1 1 70%;
+    flex-direction: row;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 1em;
+}
+nav ul li{
+    margin: 0 15px 0 10px;
+}
+nav a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+nav #other-links{
+    display: flex;
+    flex: 1 1 20%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}nav #other-links a{
+    color: #FDD835;
+    margin-right: 10px;
+    display: flex;
+}nav #other-links button{
+    background: transparent;
+    color: #ffff;
+    border-radius: 20px;
+    padding: 0.5em 1em;
+    border: 1px solid #ffff;
+}
+
+#main #head{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#head h1{
+    font-size: 5em;
+    color: #ffff;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 0.3em;
+}
+
+#head ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0 !important;
+}#head ul li{
+    list-style: none;
+    margin-right: 15px;
+    display: flex;
+}#head ul li a{
+    color: #ffff;
+    text-decoration: none;
+}#head ul li span{
+    margin-left: 10px;
+    color: white;
+}
