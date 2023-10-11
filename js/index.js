@@ -13,4 +13,7 @@ window.onload = function(){
             $(menu).removeClass('show-list-menu');
         });
 	}
+    let date = new Date();
+
+    $('#copyrigth span').html(date.getFullYear());
 }

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto+Slab:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto+Slab:wght@600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
 *{
     padding: 0;
@@ -56,7 +56,7 @@ nav .logo{
     flex: 1 1 10%;
     max-width: 20%;
     display: flex;
-    background: red;
+    background: rgb(146, 6, 6);
     justify-content: center;
     align-items: center;
 }
@@ -163,9 +163,10 @@ section h2{
 }
 
 p{
+    color: #94a1b2;
+    font-family: 'Open Sans',sans-serif;
     font-size: 1.1rem;
     line-height: 1.7;
-    color: #94a1b2;
 }
 .articles{
     width: 100%;
@@ -291,6 +292,112 @@ article{
 }#testimonial article:nth-child(3) .card span{
     color: #FDD835;
 }
+#gallery{
+    background: #242629;
+}
+#gallery div{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}#gallery div img{
+    width: 16.7%;
+    object-fit: cover;
+    object-position: center;
+    margin: 10px 0;
+}
+
+footer{
+    width: 100%;
+    background-image: url('../img/food05.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+footer .articles{
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #242629e0;
+    padding: 50px 150px 0 150px;
+}
+
+footer .articles article{
+    flex: 1 1 24%;
+    flex-direction: column;
+    padding: 1em;
+}
+footer article h4{
+    color: #FDD835;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 1rem;
+}
+
+footer p{
+    margin-bottom: 0.5rem;
+}
+footer article .horarios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}footer article h5{
+    color: #f7eaea;
+    flex: 1 1 40%;
+    display: flex;
+    text-align: left;
+    justify-content: initial;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 10px;
+}footer article .horarios span{
+    color: #f7eaea;
+    flex: 1 1 60%;
+    display: flex;
+}
+footer article form button{
+    background: #FDD835;
+    padding: 1em;
+    color: #000;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+}
+footer article:nth-child(3) h5{
+    margin-bottom: 0rem;
+}
+
+footer article input[type="text" i]{
+    margin-bottom: 0.5rem;
+    padding: 0.7em;
+}
+
+footer article nav{
+    width: 100%;
+}footer article nav ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    justify-content: center;
+}footer article nav ul li{
+    list-style: none;
+    margin: 0 15px 0 10px;
+}footer article nav ul li a{
+    text-decoration: none;
+    color: #94a1b2;
+}
+
+footer article:nth-child(5){
+    flex-direction: column;
+    width: 100%;
+}footer article:nth-child(5) #copyrigth{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.9em;
+}
 
 @media screen and (max-width: 1600px) {
     .margen-interno{
@@ -302,13 +409,22 @@ article{
         font-weight: 600;
     }
 
+    h4{
+        font-size: 1.125em;
+    }
+
     h5{
         font-size: 0.9em;
         font-weight: 600;
         width: 100%;
         justify-content: center;
     }
+
+    p{
+        font-size: 1em;
+    }
 }
+
 @media screen and (max-width: 600px) {
     .margen-interno{
         padding:  50px 20px;
@@ -338,7 +454,7 @@ article{
         color: white;
         border-bottom: 0.1px solid #ffffff59;
     }nav .mobile div a{
-        color: #94a1b2;
+        color: #ffff;
     }
     nav .mobile ul{
         display: flex;
@@ -349,7 +465,7 @@ article{
         padding: 0.3em 0;
     }nav .mobile ul li a{
         text-decoration: none;
-        color: #67757f;
+        color: #ffff;
     }
     nav .mobile #other-links{
         flex-direction: column;
@@ -369,7 +485,7 @@ article{
     nav .item_navegacion #other-links{
         display: none;
     }
-    nav #logo{
+    nav .logo{
         padding: 1em 0;
     }
     nav ul{
@@ -383,9 +499,13 @@ article{
         margin-bottom: 0.7em !important;
         font-weight: inherit;
     }
+    h4{
+        font-size: 1.2em;
+    }
     h5{
         text-align: center;
         justify-content: center;
+        font-size: 1rem;
     }
 
     header{
@@ -425,6 +545,14 @@ article{
         width: 100%;
         margin-top: 1em;
     }
+
+    footer .articles{
+        padding: 50px 20px 0 20px;
+    }
+    
+    footer .articles article{
+        flex: 1 1 100%;
+    }
 }
 @media screen and (max-width: 544px) {
     h3{
@@ -435,13 +563,5 @@ article{
         font-size: 2.2em !important;
         margin-bottom: 0.7em !important;
         font-weight: inherit;
-    }
-
-    h4{
-        font-size: 1.370em !important;
-    }
-
-    h5{
-        font-size: 0.82em !important;
     }
 }
