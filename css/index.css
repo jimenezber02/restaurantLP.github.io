@@ -9,6 +9,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+button{
+    cursor: pointer;
+}
 
 .margen-interno{
     padding:  50px 150px;
