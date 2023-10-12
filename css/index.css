@@ -563,6 +563,7 @@ footer article:nth-child(5){
     
     footer .articles article{
         flex: 1 1 100%;
+        padding: 1em 0;
     }
 }
 @media screen and (max-width: 544px) {
