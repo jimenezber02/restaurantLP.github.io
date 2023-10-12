@@ -12,9 +12,8 @@
 button{
     cursor: pointer;
 }
-
 .margen-interno{
-    padding:  50px 150px;
+    padding:  50px 330px;
     margin-top: 0px;
 }
 
@@ -34,7 +33,7 @@ header #content{
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0 150px;
+    padding: 0 330px;
 }
 nav{
     font-family: 'Montserrat', sans-serif;
@@ -260,7 +259,7 @@ article{
     height: 100%;
 }
 #testimonial article:nth-child(3){
-    padding: 0 150px;
+    padding: 0 330px;
     flex: 1 1 100%;
     flex-direction: row;
     justify-content: space-between;
@@ -321,7 +320,7 @@ footer .articles{
     flex-direction: row;
     flex-wrap: wrap;
     background: #242629e0;
-    padding: 50px 150px 0 150px;
+    padding: 50px 330px 0 330px;
 }
 
 footer .articles article{
@@ -425,6 +424,15 @@ footer article:nth-child(5){
 
     p{
         font-size: 1em;
+    }
+    header #content{
+        padding: 0 150px;
+    }
+    #testimonial article:nth-child(3){
+        padding: 0 150px;
+    }
+    footer .articles{
+        padding: 50px 150px 0 150px;
     }
 }
 
