@@ -22,7 +22,7 @@ button{
 }
 header{
     width: 100%;
-    height: 500px;
+    height: 250px;
     background-image: url('../img/vinos-banner.png');
     background-size: cover;
     background-position: center;
@@ -235,78 +235,44 @@ article{
 #discover-our-menu article:nth-child(2) .card .body-card{
     padding: 1em;
 }
-
-#section-testimonial{
-    background: #242629;
+#discover-our-menu article form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
-
-#testimonial{
+#discover-our-menu article form .row{
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 }
-
-#testimonial article:nth-child(1){
-    flex-direction: column;
-    flex: 1 1 55%;
-}#testimonial article:nth-child(1) h5{
-    justify-content: left;
-}
-#testimonial article:nth-child(2){
-    flex: 1 1 45%;
-    height: 680px;
-}
-#testimonial article:nth-child(2) img{
-    width: 100%;
-    height: 100%;
-}
-#testimonial article:nth-child(3){
-    padding: 0 330px;
-    flex: 1 1 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    background: #242629;
-}#testimonial article:nth-child(3) .card{
-    background: #f7eaea;
+#discover-our-menu article form .row .col{
     display: flex;
-    flex: 1 1 40%;
-    max-width: 48.5%;
     flex-direction: column;
-    padding: 1em;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: -380px;
-    align-self: baseline;
-}#testimonial article:nth-child(3) .card img{
-    width: 20%;
-    border-radius: 50px;
-    margin: 0 auto;
-}#testimonial article:nth-child(3) .card h4{
-    color: red;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Roboto Slab', serif;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-}#testimonial article:nth-child(3) .card h5{
-    color: #000;
-}#testimonial article:nth-child(3) .card p{
-    color: #67757f;
+    flex: 1 1 50%;
+    padding: 1rem;
+}
+#discover-our-menu article form label{
+    color: #94a1b2;
     margin-bottom: 10px;
-}#testimonial article:nth-child(3) .card span{
-    color: #FDD835;
 }
-#gallery{
+#discover-our-menu article input[type="text"],input[type="number"],input[type="date" i],i,select,textarea{
     background: #242629;
+    padding: 1em;
+    border: transparent;
+    border-radius: 10px;
+    color: #fff;
 }
-#gallery div{
-    width: 95%;
+
+#discover-our-menu article form .btn{
+    background: rgb(146, 6, 6);
+    padding: 1em;
+    color: #fff;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border: transparent;
+    width: fit-content;
+    cursor: pointer;
     margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-}#gallery div img{
-    width: 16.7%;
-    object-fit: cover;
-    object-position: center;
-    margin: 10px 0;
 }
 
 footer{
@@ -432,9 +398,7 @@ footer article:nth-child(5){
     header #content{
         padding: 0 150px;
     }
-    #testimonial article:nth-child(3){
-        padding: 0 150px;
-    }
+    
     footer .articles{
         padding: 50px 150px 0 150px;
     }
@@ -524,7 +488,7 @@ footer article:nth-child(5){
     }
 
     header{
-        height: 350px;
+        height: 200px;
     }
 
     header #content{
@@ -542,24 +506,6 @@ footer article:nth-child(5){
         width: 100%;
     }
 
-    #section-testimonial .articles{
-        flex-direction: column;
-    }
-    #section-testimonial .articles article:nth-child(1) h5{
-        justify-content: center;
-    }
-    #section-testimonial .articles article:nth-child(1) p{
-        text-align: center;
-    }
-    #section-testimonial .articles article:nth-child(3){
-        flex-direction: column;
-        padding: 0 20px;
-    }
-    #section-testimonial .articles article:nth-child(3) .card{
-        max-width: 100%;
-        width: 100%;
-        margin-top: 1em;
-    }
 
     footer .articles{
         padding: 50px 20px 0 20px;
@@ -583,17 +529,6 @@ footer article:nth-child(5){
         margin-bottom: 0.7em !important;
         font-weight: inherit;
     }
-    #testimonial article:nth-child(2) img{
-        object-fit: cover;
-    }
-    #discover-our-menu article:nth-child(2) .card{
-        flex-direction: column;
-    }
-    #discover-our-menu article:nth-child(2) .card .image img{
-        border-radius: 10px 10px 0 0;
-    }
-    #discover-our-menu article:nth-child(2) .card h5{
-        justify-content: start;
-    }
+    
 }
 

@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css?v=01">
+    <link rel="stylesheet" href="../css/reservation.css?v=02">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/index.js?v=01" type="text/javascript"></script>
-    <title>Restaurant</title>
+    <script src="../js/index.js?v=01" type="text/javascript"></script>
+    <title>Reservation</title>
 </head>
 
 <body>
@@ -25,10 +25,10 @@
                         </div>
                         <ul>
                             <li>
-                                <a href="#">Home</a>
+                                <a href="../index.html">Home</a>
                             </li>
                             <li>
-                                <a href="html/reservation.html">Reservation</a>
+                                <a href="#">Reservation</a>
                             </li>
                             <li>
                                 <a href="#">Menu</a>
@@ -53,10 +53,10 @@
                         <a href="#" class="logo">Logo</a>
                         <ul>
                             <li>
-                                <a href="#">Home</a>
+                                <a href="../index.html">Home</a>
                             </li>
                             <li>
-                                <a href="html/reservation.html">Reservation</a>
+                                <a href="#">Reservation</a>
                             </li>
                             <li>
                                 <a href="#">Menu</a>
@@ -84,15 +84,6 @@
                 </nav>
                 <div id="head">
                     <h1>ADJ Restaurant</h1>
-                    <ul>
-                        <li>
-                            <a href="#">Home</a>
-                            <span class="material-icons">
-                                arrow_right
-                            </span>
-                        </li>
-                        <li><a href="#">Our menu</a></li>
-                    </ul>
                 </div>
             </div>
         </header>
@@ -105,138 +96,52 @@
                         </span>
                         Menú
                     </h5>
-                    <h2>Descubre nuestro Menu</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, sapiente eaque enim nemo
-                        commodi alias.
-                    </p>
+                    <h2>Reserva tu lugar</h2>
                 </article>
                 <article>
-                    <div class="card">
-                        <div class="image">
-                            <img src="img/onepan.jpg" alt="">
-                        </div>
-                        <div class="body-card">
-                            <div class="title">
-                                <h5>Product 1</h5>
-                                <span>$1.50</span>
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <label>Cantidad de comensales</label>
+                                <input type="number" name="">
                             </div>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, sapiente eaque enim
-                                nemo commodi alias.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="image">
-                            <img src="img/food02.jpg" alt="">
-                        </div>
-                        <div class="body-card">
-                            <div class="title">
-                                <h5>Product 2</h5>
-                                <span>$1.50</span>
+                            <div class="col">
+                                <label>Fecha</label>
+                                <input type="date" name="">
                             </div>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, sapiente eaque enim
-                                nemo commodi alias.
-                            </p>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="image">
-                            <img src="img/food04.jpg" alt="">
-                        </div>
-                        <div class="body-card">
-                            <div class="title">
-                                <h5>Product 3</h5>
-                                <span>$1.50</span>
+                        <div class="row">
+                            <div class="col">
+                                <label>Sucursal</label>
+                                <select>
+                                    <option>-Seleccione-</option>
+                                    <option>Alto de Jes&uacute;s</option>
+                                </select>
                             </div>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, sapiente eaque enim
-                                nemo commodi alias.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="image">
-                            <img src="img/food05.jpg" alt="">
-                        </div>
-                        <div class="body-card">
-                            <div class="title">
-                                <h5>Product 4</h5>
-                                <span>$1.50</span>
+                            <div class="col">
+                                <label>Hora</label>
+                                <input type="date" name="">
                             </div>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, sapiente eaque enim
-                                nemo commodi alias.
-                            </p>
                         </div>
-                    </div>
+                        <div class="row">
+                            <div class="col">
+                                <label>Comentarios</label>
+                                <textarea cols="30" rows="10">
+                                    
+                                </textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <button class="btn">Enviar datos</button>
+                            </div>
+                        </div>
+                        
+                    </form>
                 </article>
             </div>
         </section>
 
-        <section id="section-testimonial">
-            <div class="articles" id="testimonial">
-                <article class="margen-interno">
-                    <h5><span class="material-icons">
-                            arrow_right
-                        </span>Testimonial
-                    </h5>
-                    <h2>Nuestros clientes</h2>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit cum, labore alias aliquam rem
-                        at similique laboriosam reiciendis amet eaque nostrum dolores repellendus voluptatum rerum,
-                        beatae odit mollitia a cumque?
-                    </p>
-                </article>
-                <article>
-                    <img src="img/gran-chef.jpg" alt="">
-                </article>
-
-                <article>
-                    <div class="card">
-                        <span class="material-icons">
-                            format_quote
-                        </span>
-                        <h4>Amo la comida aqu&iacute;</h4>
-                        <p>
-                            Me encanta comer aqu&iacute; porque la comida est&aacute; muy sabrosa
-                            y admiro mucho la dedicaci&oacute;n que le dedican a la preparaci&oacute;n
-                            de la comida y salgo muy lleno y satisfecho.
-                        </p>
-                        <img src="img/mario.jpg" alt="">
-                        <h5>Mario Bro</h5>
-                        <i>Salvador de la princesa</i>
-                    </div>
-                    <div class="card">
-                        <span class="material-icons">
-                            format_quote
-                        </span>
-                        <h4>Amo la comida aqu&iacute;</h4>
-                        <p>
-                            Me encanta comer aqu&iacute; porque la comida est&aacute; muy sabrosa
-                            y admiro mucho la dedicaci&oacute;n que le dedican a la preparaci&oacute;n
-                            de la comida y salgo muy lleno y satisfecho.
-                        </p>
-                        <img src="img/rango.jpg" alt="">
-                        <h5>Rango</h5>
-                        <i>Vencedor de los Jentkins</i>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section id="gallery">
-            <div id="imagenes">
-                <img src="img/food02.jpg" alt="">
-                <img src="img/food04.jpg" alt="">
-                <img src="img/food05.jpg" alt="">
-                <img src="img/food06.jpg" alt="">
-                <img src="img/food07.jpg" alt="">
-                <img src="img/food08.jpg" alt="">
-            </div>
-        </section>
         <footer>
             <div class="articles">
                 <article>
