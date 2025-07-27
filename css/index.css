@@ -533,6 +533,10 @@ footer article:nth-child(5){
         padding: 0 20px;
     }
 
+    #head ul {
+        padding: 0 3px !important;
+    }
+
     #section-menus article:nth-child(1) p{
         width: 100%;
     }
