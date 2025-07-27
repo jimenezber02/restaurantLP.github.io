@@ -128,7 +128,7 @@ nav .other-links{
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 0 !important;
+    padding: 0 5px !important;
 }#head ul li{
     list-style: none;
     margin-right: 15px;
@@ -531,10 +531,6 @@ footer article:nth-child(5){
 
     header #content{
         padding: 0 20px;
-    }
-
-    #head ul {
-        padding: 0 4px !important;
     }
 
     #section-menus article:nth-child(1) p{
