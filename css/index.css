@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto+Slab:wght@600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -113,6 +115,13 @@ nav .other-links{
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 0.3em;
     font-weight: 600;
+}
+
+#head h1 span{
+    color: #FDD835;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #head ul{
