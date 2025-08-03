@@ -16,4 +16,37 @@ window.onload = function(){
     let date = new Date();
 
     $('#copyrigth span').html(date.getFullYear());
+
+    const form = document.getElementById('reservation-form');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        sendReservation(this);
+    });
+}
+
+function sendReservation(form){
+    const span = document.getElementById("reservation-success");
+
+    const members = parseInt(form.members.value);
+    const date = form.date.value;
+    const hour = form.hour.value;
+    const location = form.location.value;
+
+    let error = false;
+
+    if (isNaN(members) || members < 1){
+        error = true;
+    }
+
+    if (!date || !hour || !location) {
+        error = true;
+    }
+
+    if (error) {
+        span.innerHTML = "Hay campos inválidos";
+        span.style.color = '#dd0909';
+    } else {
+        span.innerHTML = "Reservación completada!";
+        span.style.color = "#2bc608";
+    }
 }

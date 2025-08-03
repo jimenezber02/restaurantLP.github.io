@@ -37,7 +37,6 @@ header #content{
 }
 nav{
     font-family: 'Montserrat', sans-serif;
-    font-family: 'Roboto Slab', serif;
     width: 100%;
     
     border-bottom: 0.1px solid #ffffff59;
@@ -112,7 +111,6 @@ nav #other-links{
     color: #ffff;
     /*font-family: 'Open Sans', sans-serif;*/
     font-family: 'Montserrat', sans-serif;
-    font-family: 'Roboto Slab', serif;
     margin-bottom: 0.3em;
     font-weight: 600;
 }
@@ -150,16 +148,15 @@ section h5{
     font-size: 1em;
     font-weight: 600;
     line-height: 1.55;
-    transform: default;
-    text-decoration: default;
-    font-style: default;
+    transform: initial;
+    text-decoration: initial;
+    font-style: initial;
 }
 
 section h2{
     color: #ffff;
     margin-bottom: 1rem;
     font-family: 'Montserrat', sans-serif;
-    font-family: 'Roboto Slab', serif;
     font-weight: 600;
     font-size: 3rem;
 }
@@ -225,7 +222,6 @@ article{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto Slab', serif;
 }#discover-our-menu article:nth-child(2) .card .title h5{
     color: #ffff;
@@ -255,7 +251,8 @@ article{
     color: #94a1b2;
     margin-bottom: 10px;
 }
-#discover-our-menu article input[type="text"],input[type="number"],input[type="date" i],i,select,textarea{
+#discover-our-menu article input[type="text"],input[type="number"],input[type="date" i],input[type="time" i],i,
+select,textarea{
     background: #242629;
     padding: 1em;
     border: transparent;
@@ -263,11 +260,28 @@ article{
     color: #fff;
 }
 
+#hour + span {
+    padding-right: 30px;
+}
+
+#hour:invalid + span::after {
+    position: absolute;
+    content: "✖ No disponible";
+    padding-left: 5px;
+    color: #dd0909;
+}
+
+#hour:valid + span::after {
+    position: absolute;
+    content: "✓";
+    padding-left: 5px;
+    color: #2bc608;
+}
+
 #discover-our-menu article form .btn{
     background: rgb(146, 6, 6);
     padding: 1em;
     color: #fff;
-    margin-bottom: 1rem;
     border-radius: 10px;
     border: transparent;
     width: fit-content;
@@ -296,7 +310,6 @@ footer .articles article{
 }
 footer article h4{
     color: #FDD835;
-    font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto Slab', serif;
     margin-bottom: 1rem;
 }
@@ -315,7 +328,6 @@ footer article .horarios{
     display: flex;
     text-align: left;
     justify-content: initial;
-    font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto Slab', serif;
     margin-bottom: 10px;
 }footer article .horarios span{

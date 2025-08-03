@@ -40,7 +40,7 @@
                                 <a href="#">Contact</a>
                             </li>
                         </ul>
-                        <div id="other-links">
+                        <div class="other-links">
                             <a href="#">
                                 <span class="material-icons">
                                     phone
@@ -68,7 +68,7 @@
                                 <a href="#">Contact</a>
                             </li>
                         </ul>
-                        <div id="other-links">
+                        <div class="other-links">
                             <a href="#">
                                 <span class="material-icons">
                                     phone
@@ -94,33 +94,35 @@
                         <span class="material-icons">
                             arrow_right
                         </span>
-                        Menú
+                        Reservación
                     </h5>
                     <h2>Reserva tu lugar</h2>
+                    <span id="reservation-success"></span>
                 </article>
                 <article>
-                    <form>
+                    <form id="reservation-form">
                         <div class="row">
                             <div class="col">
                                 <label>Cantidad de comensales</label>
-                                <input type="number" name="">
+                                <input type="number" name="members">
                             </div>
                             <div class="col">
                                 <label>Fecha</label>
-                                <input type="date" name="">
+                                <input type="date" name="date">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
                                 <label>Sucursal</label>
-                                <select>
-                                    <option>-Seleccione-</option>
-                                    <option>Alto de Jes&uacute;s</option>
+                                <select name="location">
+                                    <option value="">-Seleccione-</option>
+                                    <option value="1">Alto de Jes&uacute;s</option>
                                 </select>
                             </div>
                             <div class="col">
-                                <label>Hora</label>
-                                <input type="date" name="">
+                                <label for="hour">Hora - Abierto de 8am a 10pm</label>
+                                <input type="time" id="hour" name="hour" min="08:00" max="22:00" value="08:00">
+                                <span class="validity"></span>
                             </div>
                         </div>
                         <div class="row">
@@ -133,10 +135,9 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <button class="btn">Enviar datos</button>
+                                <button class="btn" type="submit">Enviar datos</button>
                             </div>
                         </div>
-                        
                     </form>
                 </article>
             </div>
