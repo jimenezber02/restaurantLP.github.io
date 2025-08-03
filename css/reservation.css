@@ -79,6 +79,10 @@ nav .item_navegacion a{
 nav .btn-burguer{
     display: flex;
     align-items: center;
+    background: transparent !important;
+}
+.btn-burguer i {
+    background: transparent !important;
 }
 nav .other-links{
     display: flex;
@@ -476,6 +480,11 @@ footer article:nth-child(5){
     nav .item_navegacion .other-links{
         display: none;
     }
+
+    #close-menu{
+        background: transparent !important;
+    }
+
     nav .logo{
         padding: 1em 0;
     }
