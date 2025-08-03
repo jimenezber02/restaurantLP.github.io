@@ -440,6 +440,7 @@ footer article:nth-child(5){
         
         position: fixed;
         padding: 1em;
+        z-index: 1;
     }
     nav .mobile div{
         width: 100%;
